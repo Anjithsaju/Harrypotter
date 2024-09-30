@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Hogwarts</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      .house-details {
+        padding: 20px;
+      }
+      h3 {
+        color: #333;
+      }
+      ul,
+      ol {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+      ul li {
+        margin-bottom: 5px;
+      }
+      .cont {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .content {
+        border-radius: 20px;
+        padding: 20px;
+        height: fit-content;
+        background: #c1f9ffbd;
+        font-family: sans-serif;
+        width: 34vw;
+        width: clamp(314px, 34vw, 1000px);
+        margin: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="main">
+      <nav class="head">
+        <a id="this" href="#main">Home</a>
+        <a href="#page2">Houses</a>
+        <a href="#house-stats">Points</a>
+        <a href="#contact">Contact</a>
+
+        <!-- External link -->
+      </nav>
+      <h1 class="welcome-text">Welcome to Hogwarts</h1>
+    </section>
+
+    <section id="page2" class="page2">
+      <h1>Houses</h1>
+      <div class="grid-container">
+        <div class="group">
+          <img src="./pngegg.png" alt="Gryffindor House Image" />
+          <div class="content">
+            <h3>Gryffindor</h3>
+            <p>
+              Gryffindor values courage and bravery. The house was founded by
+              Godric Gryffindor.
+            </p>
+            <ul class="cont">
+              <li>
+                Key Traits:
+                <ul>
+                  <li>Bravery</li>
+                  <li>Courage</li>
+                  <li>Determination</li>
+                </ul>
+              </li>
+              <li>
+                Famous Members:
+                <ol>
+                  <li>Harry Potter</li>
+                  <li>Hermione Granger</li>
+                  <li>Ron Weasley</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="group">
+          <img src="./slyth.png" alt="Slytherin House Image" />
+          <div class="content">
+            <h3>Slytherin</h3>
+            <p>
+              Slytherin values ambition and resourcefulness. The house was
+              founded by Salazar Slytherin.
+            </p>
+            <ul class="cont">
+              <li>
+                Key Traits:
+                <ul>
+                  <li>Ambition</li>
+                  <li>Leadership</li>
+                  <li>Cunning</li>
+                </ul>
+              </li>
+              <li>
+                Famous Members:
+                <ol>
+                  <li>Draco Malfoy</li>
+                  <li>Severus Snape</li>
+                  <li>Tom Riddle (Lord Voldemort)</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="group">
+          <img src="./rav.png" alt="Ravenclaw House Image" />
+          <div class="content">
+            <h3>Ravenclaw</h3>
+            <p>
+              Ravenclaw values intelligence and wisdom. The house was founded by
+              Rowena Ravenclaw.
+            </p>
+            <ul class="cont">
+              <li>
+                Key Traits:
+                <ul>
+                  <li>Intelligence</li>
+                  <li>Creativity</li>
+                  <li>Originality</li>
+                </ul>
+              </li>
+              <li>
+                Famous Members:
+                <ol>
+                  <li>Luna Lovegood</li>
+                  <li>Cho Chang</li>
+                  <li>Filius Flitwick</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="group">
+          <img src="./huff.png" alt="Hufflepuff House Image" />
+          <div class="content">
+            <h3>Hufflepuff</h3>
+            <p>
+              Hufflepuff values loyalty and hard work. The house was founded by
+              Helga Hufflepuff.
+            </p>
+            <ul class="cont">
+              <li>
+                Key Traits:
+                <ul>
+                  <li>Loyalty</li>
+                  <li>Patience</li>
+                  <li>Dedication</li>
+                </ul>
+              </li>
+              <li>
+                Famous Members:
+                <ol>
+                  <li>Cedric Diggory</li>
+                  <li>Nymphadora Tonks</li>
+                  <li>Pomona Sprout</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table showcasing famous house statistics -->
+    <section id="house-stats">
+      <h2>House Points Standings</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>House</th>
+            <th>Points Earned</th>
+            <th>Top Performer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gryffindor</td>
+            <td>450</td>
+            <td>Hermione Granger</td>
+          </tr>
+          <tr>
+            <td>Slytherin</td>
+            <td>380</td>
+            <td>Draco Malfoy</td>
+          </tr>
+          <tr>
+            <td>Ravenclaw</td>
+            <td>410</td>
+            <td>Luna Lovegood</td>
+          </tr>
+          <tr>
+            <td>Hufflepuff</td>
+            <td>370</td>
+            <td>Cedric Diggory</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form for user registration -->
+    <section id="contact" class="contact-section">
+      <h2>Join Hogwarts!</h2>
+      <form action="#" method="post" class="hogwarts-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="house">Choose Your House:</label>
+        <select id="house" name="house">
+          <option value="gryffindor">Gryffindor</option>
+          <option value="slytherin">Slytherin</option>
+          <option value="ravenclaw">Ravenclaw</option>
+          <option value="hufflepuff">Hufflepuff</option>
+        </select>
+
+        <label for="newsletter">Subscribe to Hogwarts Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <footer>
+      <a href="https://www.wizardingworld.com/" target="_blank"
+        >Click here to Find more about Wizarding World</a
+      >
+      <p>
+        &copy; 2024 Hogwarts School of Witchcraft and Wizardry &ndash; All
+        rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
